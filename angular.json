@@ -13,6 +13,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "pdfmake",
+              "pdfmake/build/vfs_fonts"
+            ],
             "outputPath": "dist/lab14-reporte",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -25,6 +29,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c72afbec-7a3c-49d2-8bcd-e1b9104361cf"
   }
 }
